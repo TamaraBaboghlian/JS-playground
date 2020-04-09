@@ -39,5 +39,10 @@ var obj1 = {
     }
 }
 
-setTimeout(obj1.boo, 1000);
-obj1.boo();
+setTimeout(obj1.boo, 1000); // undefined
+
+function joo() {
+    obj1.boo.call(obj1);
+}
+
+setTimeout(joo, 2000); //5
