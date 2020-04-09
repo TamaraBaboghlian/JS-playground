@@ -27,3 +27,17 @@ doFoo(obj.foo);
 // if the function you're passing your callback to is not your own, but built-in to the
 // language? No difference, same outcome.
 setTimeout(obj.foo, 1000);
+
+function boo() {
+    console.log(this.b);
+};
+
+var obj1 = {
+    val: 5,
+    boo: function () {
+        console.log(this.val);
+    }
+}
+
+setTimeout(obj1.boo, 1000);
+obj1.boo();
