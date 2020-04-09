@@ -30,3 +30,6 @@ const valodik = {
 }
 
 valodik.ff();
+
+var foo = valodik.ff
+foo();
