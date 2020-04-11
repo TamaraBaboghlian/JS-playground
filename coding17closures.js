@@ -9,6 +9,9 @@ function foo(arg) {
 const first = foo(15);
 first();
 
+const second = foo(18);
+second();
+
 console.log(10 * 'a');
 
 var arr1 = [5, 6, 7];
