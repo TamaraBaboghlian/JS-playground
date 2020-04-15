@@ -67,4 +67,4 @@ p2.then(
     function rejected(err) {
         // never gets here
     }
-)
+).then(console.log); //outputs 42
