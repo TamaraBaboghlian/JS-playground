@@ -30,6 +30,11 @@ p.then(function (v) {
     })
 
 /*
+
+Even though we wrapped 42 up in a promise that we returned, it still got unwrapped and
+ended up as the resolution of the chained promise, such that the second
+received 42.
+
 That's incredibly powerful! Now we can construct a sequence of however many async steps
 we want, and each step can delay the next step (or not!), as necessary.
 */
