@@ -50,3 +50,11 @@ setTimeout(function () {
 conclusion:
 It's clear that promises run before timeout!!
 */
+
+const pA = Promise.resolve("Onze");
+const pB = Promise.resolve(pA);
+const pC = Promise.resolve(pB);
+
+console.log(pA === pC)
+
+pC.then(console.log)
