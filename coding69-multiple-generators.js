@@ -20,3 +20,19 @@ val2 = it2.next(val1 * 5).value;          // 600
 
 it1.next(val2 / 2);       // y:300  
 it2.next(val1 / 4);       // y:10
+
+function* boo() {
+    var b = yield 7;
+    var z = 20;
+    console.log(`b: ${b}`);
+    var c = (yield z) + 10;
+    console.log(`c: ${c}`);
+}
+
+var it = boo();
+var ans = it.next();
+console.log(ans);
+ans = it.next(10).value;
+console.log(ans);
+it.next(100);
+console.log(it.next())
