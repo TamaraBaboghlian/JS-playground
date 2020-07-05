@@ -11,16 +11,20 @@ function go2(index) {
     return new Promise((res, rej) => {
         setTimeout(()=> {
             res(`GO Two!!!! ${index}`);
-            console.log("Done", index);
+            console.log("Go Two", index);
         }, 100)
     })
 }
 
-
-
 go("Yeah").then(console.log)
+
 async function callGo(index) {
     const result = await go(index);
+    console.log(result);
+}
+
+async function callGo2(index) {
+    const result = await go2(index);
     console.log(result);
 }
 
