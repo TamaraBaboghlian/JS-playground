@@ -22,4 +22,5 @@ setInterval(helloArmeniaThrottled, 10);
 
 /*
 The most interesting part is: despite the 10ms interval, calls to helloArmenia are throttled and "Bonjour Armenia" will only be logged once per second.
+The magic of closure is speaking!!!
 */
