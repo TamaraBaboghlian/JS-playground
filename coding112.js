@@ -20,3 +20,4 @@ async function go() {
 
 go()
 
+console.log(`I'm sync op`)

@@ -7,6 +7,7 @@ function throttle(fn, milliseconds) {
    
 
     return function() {
+        console.log(`last call time:    ${lastCallTime}`)
         console.log('*** throttle called ***');
         let nowTime = Date.now();
         if (!lastCallTime || lastCallTime < nowTime - milliseconds) {
